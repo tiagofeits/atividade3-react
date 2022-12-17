@@ -1,18 +1,15 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import '../../App.css'
 
 const SignUpPage = () => {
-    const navigate = useNavigate();
-    const navegarLogin=()=>{
-        navigate('/login');
-    };
+
     return (
         <div className="text-center m-5-auto">
             <h2>Novo Cadastro</h2>
             <h5>Informe seus dados para criar uma nova conta!</h5>
-            <form action="/home">
+            <form action="/login">
                 <p>
                     <label for="nomeusu">Nome de usuário:</label>
                     <br/>
@@ -35,7 +32,7 @@ const SignUpPage = () => {
                     <input type="checkbox" name="checkbox" id="checkbox" required /> <span>Eu concordo com todos os termos de serviço em <a href="https://www.google.com.br" target="_blank" rel="noopener noreferrer">termos de serviço</a></span>.
                 </p>
                 <p>
-                    <button id="sub_btn" onClick={navegarLogin}>Cadastrar</button>
+                    <button id="sub_btn" type="submit">Cadastrar</button>
                 </p>
                 <p>
                     <Link to="/">Página Principal</Link>

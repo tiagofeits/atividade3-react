@@ -18,7 +18,7 @@ export default function ForgetPasswordPage() {
                 </p>
             </form>
             <footer>
-                <p>First time? <Link to="/register">Criar uma nova conta</Link>.</p>
+                <p>Primeiro acesso? <Link to="/register">Criar uma nova conta</Link>.</p>
                 <p><Link to="/">Página Principal</Link>.</p>
             </footer>
         </div>
